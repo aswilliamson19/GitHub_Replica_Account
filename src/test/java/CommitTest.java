@@ -30,4 +30,5 @@ public class CommitTest {
     public void canGetUniqueId(){
         assertEquals(125, commit3.getUniqueId());
     }
+
 }
