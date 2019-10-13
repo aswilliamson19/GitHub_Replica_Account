@@ -1,8 +1,11 @@
+import java.util.HashMap;
+
 public class GitHubAccount {
 
     private String username;
     private String name;
     private String accountType;
+//    private HashMap<String, String> repo = new Hashmap<String, String>();
 
     public GitHubAccount(String username, String name, String accountType){
         this.username = username;
