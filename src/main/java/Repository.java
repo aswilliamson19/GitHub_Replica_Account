@@ -34,12 +34,13 @@ public class Repository {
         commits.add(commit);
     }
 
-    public Commit findCommitById(int uniqueId, ArrayList<Commit> commits) {
-        if (commits.contains(uniqueId)) {
-            return Commit;
-        } else {
-            return null;
+    public Commit findCommitById(int foundCommit) {
+        for (Commit commit : this.commits){
+            if(commit.getUniqueId() == foundCommit){
+                return commit;
+            }
         }
+       return null;
     }
 
 
